@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -15,7 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
+import RNBootSplash from "react-native-bootsplash";
 import {
   Header,
   LearnMoreLinks,
@@ -25,6 +25,11 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App: () => React$Node = () => {
+
+  useEffect(() => {
+    RNBootSplash.hide({ duration: 250 });
+  }, []);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
