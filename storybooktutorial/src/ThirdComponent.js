@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import { StyleSheet, View, Text, TextInput, Button, SafeAreaView } from "react-native";
 
-import { FoodContext } from "./provider/FoodProvider";
+import { AppContext } from "./provider/ContextProvider";
 
 const ThirdComponent = (props) => {
     // async componentDidMount() {
@@ -12,7 +12,7 @@ const ThirdComponent = (props) => {
     //   console.log(brewery.name);
     // }
 
-    const food = useContext(FoodContext);
+    const food = useContext(AppContext);
 
     return (
         <SafeAreaView>

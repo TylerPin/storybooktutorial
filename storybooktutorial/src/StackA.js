@@ -17,7 +17,7 @@ export default function StackA() {
         <Stack.Navigator
             // screenOptions={{ headerShown: false }}
             // initialRouteName="Tab"
-            mode="modal"
+            // mode="modal"
             headerMode="none"
         >
             <Stack.Screen
@@ -30,11 +30,11 @@ export default function StackA() {
                 component={SecondComponent}
                 title={"Second Component"}
             />
-            <Stack.Screen
+            {/* <Stack.Screen
                 name="ThirdComponent"
                 component={ThirdComponent}
                 title={"Third Component"}
-            />
+            /> */}
         </Stack.Navigator>
     );
 }
